@@ -1,0 +1,37 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Weather by Shiwani ☀️</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="app-container">
+    <h1>☁️ Weather Bliss</h1>
+    <p class="byline">Created by Shiwani Mishra 💖</p>
+
+    <div class="search">
+      <input type="text" id="cityInput" placeholder="Enter city name">
+      <button onclick="getWeather()">🔍</button>
+      <select id="unitSelector" onchange="getWeather()">
+        <option value="C">°C</option>
+        <option value="F">°F</option>
+      </select>
+    </div>
+
+    <div id="weatherDisplay" class="weather-card hidden">
+      <h2 id="location"></h2>
+      <img id="icon" src="" alt="weather icon" />
+      <p id="temp"></p>
+      <p id="desc"></p>
+      <p id="humidity"></p>
+      <p id="wind"></p>
+      <p id="time"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

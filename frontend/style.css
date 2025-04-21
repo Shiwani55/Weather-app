@@ -1,0 +1,55 @@
+
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background: linear-gradient(to bottom, #c1f0ff, #d0f8ff);
+  background-size: 400% 400%;
+  animation: gradientMove 12s ease infinite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.app-container {
+  background: rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(12px);
+  border-radius: 20px;
+  padding: 30px;
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  box-shadow: 0 0 20px rgba(0,0,0,0.1);
+}
+
+.byline {
+  font-size: 14px;
+  color: #555;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+.search input,
+.search button,
+.search select {
+  padding: 10px;
+  margin: 5px;
+  border-radius: 10px;
+  border: none;
+  font-size: 16px;
+}
+
+.weather-card img {
+  width: 80px;
+  margin: 10px 0;
+}
+
+.hidden {
+  display: none;
+}
