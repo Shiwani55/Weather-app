@@ -5,7 +5,7 @@ async function getWeather() {
   if (!city) return alert("Enter a city name!");
 
   try {
-    const res = await fetch(`http://localhost:3000/weather?city=${city}`);
+    const res = await fetch(`https://weather-app-2-5mw2.onrender.com/weather?city=${city}`);
     const data = await res.json();
 
     const temp = unit === "F" ? data.current.temp_f + " °F" : data.current.temp_c + " °C";
